@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
  */
 public class OperationPresenterTest {
     @Test
-    public void sqrt_isCorrect() {
-        assertTrue("Is correct", Math.sqrt(9) == 3);
+    public void pow_isCorrect() {
+        assertTrue("Is correct", Math.pow(8,2) == 64);
     }
 }

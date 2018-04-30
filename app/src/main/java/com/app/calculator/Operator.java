@@ -6,7 +6,8 @@ public enum Operator {
     MUL("multiplicate","*"),
     SUB("subtract","-"),
     DIV("divide","/"),
-    SQRT("square","√");
+    SQRT("square","√"),
+    POW("exp","Exp");
 
     private String name, symbol;
 
