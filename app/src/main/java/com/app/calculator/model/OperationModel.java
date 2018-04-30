@@ -11,6 +11,15 @@ public class OperationModel {
             case "+":
                 result = firstNumber + secondNumber;
                 break;
+            case "-":
+                result = firstNumber - secondNumber;
+                break;
+            case "*":
+                result = firstNumber * secondNumber;
+                break;
+            case "/":
+                result = firstNumber / secondNumber;
+                break;
         }
         return  result;
     }
