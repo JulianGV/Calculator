@@ -27,7 +27,10 @@ public class OperationPresenter {
         else model.setSecondNumber(Integer.parseInt("0"));
 
         if(!view.getOperator().equalsIgnoreCase(Operator.DEF.getSymbol())) {
-            view.setResult(String.valueOf(model.getOperation(view.getOperator())));
+            if(view.getOperator().equalsIgnoreCase(Operator.DIV.getSymbol()) && view.getSecondNumber().equalsIgnoreCase("0")){
+                view.showError(view.getContext().getString(R.string.error_operator_division));
+            }
+            else view.setResult(String.valueOf(model.getOperation(view.getOperator())));
         }
         else{
             view.showError(view.getContext().getString(R.string.error_operator_select));
