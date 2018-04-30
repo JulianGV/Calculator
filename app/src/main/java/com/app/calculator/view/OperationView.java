@@ -36,6 +36,8 @@ public class OperationView extends ActivityView  {
         ArrayList<String> operators = new ArrayList<>();
         operators.add(Operator.DEF.getSymbol());
         operators.add(Operator.ADD.getSymbol());
+        operators.add(Operator.MUL.getSymbol());
+        operators.add(Operator.DIV.getSymbol());
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(getContext(),
                 android.R.layout.simple_spinner_item, operators);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
