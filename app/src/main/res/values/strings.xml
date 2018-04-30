@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="first_number_hint">First Number</string>
+    <string name="operator_hint">Operator</string>
+    <string name="second_number_hint">Second Number</string>
+    <string name="result_hint">Result</string>
+    <string name="error_operator_select">You have to select an operator</string>
+    <string name="error_operator_division">Zero division not allow</string>
+</resources>
