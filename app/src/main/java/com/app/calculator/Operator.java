@@ -2,7 +2,8 @@ package com.app.calculator;
 
 public enum Operator {
     DEF("def","Select Operation"),
-    ADD("add","+");
+    ADD("add","+"),
+    DIV("divide","/");
 
     private String name, symbol;
 
