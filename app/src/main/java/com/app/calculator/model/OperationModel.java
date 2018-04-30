@@ -11,6 +11,21 @@ public class OperationModel {
             case "+":
                 result = firstNumber + secondNumber;
                 break;
+            case "-":
+                result = firstNumber - secondNumber;
+                break;
+            case "*":
+                result = firstNumber * secondNumber;
+                break;
+            case "/":
+                result = firstNumber / secondNumber;
+                break;
+            case "√":
+                result = Math.sqrt(secondNumber);
+                break;
+            case "Exp":
+                result = Math.pow(firstNumber,secondNumber);
+                break;
         }
         return  result;
     }

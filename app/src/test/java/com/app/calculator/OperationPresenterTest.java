@@ -10,4 +10,8 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class OperationPresenterTest {
+    @Test
+    public void pow_isCorrect() {
+        assertTrue("Is correct", Math.pow(8,2) == 64);
+    }
 }
