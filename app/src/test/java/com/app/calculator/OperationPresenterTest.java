@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
  */
 public class OperationPresenterTest {
     @Test
-    public void multiplication_isCorrect() {
-        assertEquals(33, 56 - 23);
+    public void sqrt_isCorrect() {
+        assertTrue("Is correct", Math.sqrt(9) == 3);
     }
 }

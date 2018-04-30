@@ -20,6 +20,9 @@ public class OperationModel {
             case "/":
                 result = firstNumber / secondNumber;
                 break;
+            case "√":
+                result = Math.sqrt(secondNumber);
+                break;
         }
         return  result;
     }
