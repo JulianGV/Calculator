@@ -10,4 +10,8 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class OperationPresenterTest {
+    @Test
+    public void sqrt_isCorrect() {
+        assertTrue("Is correct", Math.sqrt(9) == 3);
+    }
 }

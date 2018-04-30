@@ -26,10 +26,11 @@ public class OperationPresenter {
         if(!view.getSecondNumber().isEmpty()) model.setSecondNumber(Integer.parseInt(view.getSecondNumber()));
         else model.setSecondNumber(Integer.parseInt("0"));
 
-        if(!view.getOperator().equalsIgnoreCase(Operator.DEF.getSymbol())) {
-            view.setResult(String.valueOf(model.getOperation(view.getOperator())));
-        }
-        else{
+        if (!view.getOperator().equalsIgnoreCase(Operator.DEF.getSymbol())) {
+            if (view.getOperator().equalsIgnoreCase(Operator.DIV.getSymbol()) && view.getSecondNumber().equalsIgnoreCase("0")) {
+                view.showError(view.getContext().getString(R.string.error_operator_division));
+            } else view.setResult(String.valueOf(model.getOperation(view.getOperator())));
+        } else {
             view.showError(view.getContext().getString(R.string.error_operator_select));
         }
     }
